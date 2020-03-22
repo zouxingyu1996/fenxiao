@@ -1,0 +1,79 @@
+{
+  "id": "1696102",
+  "name": "分销",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "741923",
+      "name": "设置 (2)",
+      "font_class": "shezhi2",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "3456452",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "8562220",
+      "name": "icon_皇冠",
+      "font_class": "icon_huangguan",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "7629092",
+      "name": "折扣",
+      "font_class": "zhekou",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "6327877",
+      "name": "锁定",
+      "font_class": "suoding",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "11495053",
+      "name": "忘记密码",
+      "font_class": "wangjimima",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "7991705",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "9472089",
+      "name": "手机号",
+      "font_class": "shoujihao",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "609192",
+      "name": "箭头",
+      "font_class": "jiantouarrowhead7",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "608352",
+      "name": "箭头",
+      "font_class": "jiantouarrow487",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    }
+  ]
+}
