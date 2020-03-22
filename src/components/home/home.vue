@@ -175,7 +175,6 @@ export default {
       padding-bottom .5rem
       .top
         border-top 1px solid #f4f4f4
-        font-size .32rem
         padding .3rem
         .bt
           font-weight 700

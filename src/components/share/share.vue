@@ -5,7 +5,7 @@
         <span class="iconfont icon-jiantouarrowhead7" @click="back"></span>
         <span class="text">我的二维码</span>
       </div>
-      <div class="cen">
+      <div class="cen" ref="imageWrapper">
         <div class="top">
           <div class="box">
             <img src="./CZ-YX-1.png">
@@ -16,8 +16,17 @@
           <div class="text">提示：“复制链接”后在输入时粘贴发送给好友</div>
         </div>
       </div>
+      <van-overlay :show="show">
+        <div class="wrapper" @click.stop>
+          <div class="box">
+            <img :src="imgUrl">
+          </div>
+          <div class="tips">--长按上方图片保存到手机--</div>
+          <div class="btn" @click="close">关闭</div>
+        </div>
+      </van-overlay>
       <div class="bottom">
-        <div class="fl">保存图片</div>
+        <div class="fl" @click="toImage">保存图片</div>
         <div class="fr">复制链接</div>
       </div>
     </div>
@@ -25,13 +34,29 @@
 </template>
 
 <script type="text/ecmascript-6">
+import html2canvas from 'html2canvas'
 export default {
   data () {
-    return {}
+    return {
+      imgUrl: '',
+      show: false
+    }
   },
   methods: {
     back () {
       this.$router.back()
+    },
+    toImage () {
+      html2canvas(this.$refs.imageWrapper).then(canvas => {
+        let dataURL = canvas.toDataURL('image/png')
+        this.imgUrl = dataURL
+        if (this.imgUrl !== '') {
+          this.show = true
+        }
+      })
+    },
+    close () {
+      this.show = false
     }
   }
 }
@@ -47,9 +72,9 @@ export default {
     width 100%
     background $color-background-d
     &.slide-enter-active, &.slide-leave-active
-      transition: all .3s
+      transition all .3s
     &.slide-enter, &.slide-leave-to
-      transform: translate3d(100%, 0, 0)
+      transform translate3d(100%, 0, 0)
     .header
       height 1rem
       width 100%
@@ -58,13 +83,16 @@ export default {
       align-items center
       justify-content center
       position relative
+      border-bottom 1px solid #eee
       .iconfont
-        extend-click()
         position absolute
-        left .2rem
-        font-size $font-size-large
+        left 0
+        font-size 0.36rem
+        width 1rem
+        text-align center
       .text
         font-size $font-size-large
+        font-weight 700
     .cen
       margin 1.2rem .3rem
       .top
@@ -99,6 +127,31 @@ export default {
           text-align center
         .text
           line-height 1.5
+    .wrapper
+      display flex
+      align-items center
+      justify-content center
+      flex-flow column
+      height 100%
+      .box
+        margin 0 1rem
+        img
+          width 100%
+          height 100%
+          border-radius .2rem
+      .tips
+        color #fff
+        margin-top .3rem
+      .btn
+        margin .3rem auto 0
+        font-size 0.28rem
+        color #fff
+        width 2.58rem
+        height 0.68rem
+        border-radius 0.5rem
+        text-align center
+        line-height 0.68rem
+        background-color #fc8535
     .bottom
       position fixed
       bottom 0

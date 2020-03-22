@@ -43,8 +43,8 @@
       </div>
     </div>
     <div class="cen">
-      <router-link tag="div" class="item" to="/share">
-        <img src="./icon03.png">分销佣金
+      <router-link tag="div" class="item" to="/promotion">
+        <img src="./icon03.png">推广佣金
       </router-link>
       <router-link tag="div" class="item" to="/share">
         <img src="./icon04.png">兑换订单
@@ -59,7 +59,7 @@
     <div class="list">
       <router-link tag="div" class="item" to="/share">
         <img class="fl" src="./icon07.png">
-        <span>我的分销码</span>
+        <span>我的二维码</span>
         <img class="fr" src="./icon08.png">
       </router-link>
       <router-link tag="div" class="item" to="/share">

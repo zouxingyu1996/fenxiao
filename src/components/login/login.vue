@@ -112,7 +112,6 @@ export default {
               font-size .36rem
               margin-right .32rem
             input
-              font-size .32rem
               width 100%
               line-height normal
               outline none

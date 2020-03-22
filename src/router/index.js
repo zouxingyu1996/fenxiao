@@ -39,6 +39,18 @@ const Integral = (resolve) => {
   })
 }
 
+const Find = (resolve) => {
+  import('components/find/find').then((module) => {
+    resolve(module)
+  })
+}
+
+const Promotion = (resolve) => {
+  import('components/promotion/promotion').then((module) => {
+    resolve(module)
+  })
+}
+
 export default new Router({
   // mode: 'history',
   // 以上注释去除地址栏#
@@ -96,6 +108,22 @@ export default new Router({
       component: Integral,
       meta: {
         title: '积分兑换',
+        type: 'login'
+      }
+    },
+    {
+      path: '/find',
+      component: Find,
+      meta: {
+        title: '发现',
+        type: 'login'
+      }
+    },
+    {
+      path: '/promotion',
+      component: Promotion,
+      meta: {
+        title: '推广佣金',
         type: 'login'
       }
     }
