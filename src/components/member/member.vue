@@ -1,4 +1,5 @@
 <template>
+  <transition name="slide">
     <div class="member">
       <div class="header">
         <swiper :options="swiperOption" ref="mySwiper">
@@ -75,6 +76,7 @@
         </router-link>
       </div>
     </div>
+  </transition>
 </template>
 
 <script type="text/ecmascript-6">
@@ -118,6 +120,16 @@ export default {
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
   .member
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    background: #f5f5f5;
+    &.slide-enter-active, &.slide-leave-active
+      transition: all .3s
+    &.slide-enter, &.slide-leave-to
+      transform: translate3d(100%, 0, 0)
     .header
       background-color #232323
       width 100%

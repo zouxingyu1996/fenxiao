@@ -1,7 +1,7 @@
 <template>
   <div class="me">
     <div class="top">
-      <div class="set"><span class="iconfont icon-shezhi2"></span></div>
+      <router-link tag="div" class="set" to="/set"><span class="iconfont icon-shezhi2"></span></router-link>
       <div class="user">
         <div class="fl">
           <img src="./user.png">
@@ -32,22 +32,22 @@
         </div>
       </div>
       <div class="box">
-        <div class="fl">
+        <router-link tag="div" class="fl" to="/recharge">
           <img src="./icon01.png">
           <div>充值</div>
-        </div>
-        <div class="fr">
+        </router-link>
+        <router-link tag="div" class="fr" to="/cash">
           <img src="./icon02.png">
           <div>提现</div>
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="cen">
       <router-link tag="div" class="item" to="/promotion">
         <img src="./icon03.png">推广佣金
       </router-link>
-      <router-link tag="div" class="item" to="/share">
-        <img src="./icon04.png">兑换订单
+      <router-link tag="div" class="item" to="/order">
+        <img src="./icon04.png">订单列表
       </router-link>
       <router-link tag="div" class="item" to="/member">
         <img src="./icon06.png">会员中心
@@ -62,7 +62,7 @@
         <span>我的二维码</span>
         <img class="fr" src="./icon08.png">
       </router-link>
-      <router-link tag="div" class="item" to="/share">
+      <router-link tag="div" class="item" to="/cashrecord">
         <img class="fl" src="./icon09.png">
         <span>提现记录</span>
         <img class="fr" src="./icon08.png">
@@ -102,8 +102,12 @@ export default {
       color $color-text-d
       .set
         position absolute
-        right .5rem
-        top .5rem
+        right .4rem
+        top .4rem
+        width 1rem
+        height 1rem
+        text-align center
+        line-height 1rem
         span
           font-size .4rem
       .user

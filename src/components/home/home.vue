@@ -55,7 +55,7 @@
         <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=718084406,3832063102&fm=15&gp=0.jpg">
       </div>
       <div class="shop">
-        <div class="item">
+        <router-link tag="div" class="item" to="/detail">
           <div class="fl"><img src="https://17439221.s21i.faiusr.com/2/ABUIABACGAAg-ZvY3AUo_uOggQYw3gI4_gE.jpg.webp"></div>
           <div class="fr">
             <div class="bt">云台山风景区普通门票包</div>
@@ -64,8 +64,8 @@
             <div class="btn"><span class="iconfont icon-gouwuche"></span></div>
           </div>
           <div class="clear"></div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="fl"><img src="https://17439221.s21i.faiusr.com/2/ABUIABACGAAgt-nh3AUo2bfyaTCAIDiAGA!500x500.jpg"></div>
           <div class="fr">
             <div class="bt">云台山风景区豪华门票包</div>
@@ -74,8 +74,8 @@
             <div class="btn"><span class="iconfont icon-gouwuche"></span></div>
           </div>
           <div class="clear"></div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="fl"><img src="https://17439221.s21i.faiusr.com/2/ABUIABACGAAgo-Xh3AUo77awowIwxwU48gI!300x300.jpg"></div>
           <div class="fr">
             <div class="bt">云台山风景区黄金门票包</div>
@@ -84,8 +84,8 @@
             <div class="btn"><span class="iconfont icon-gouwuche"></span></div>
           </div>
           <div class="clear"></div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="fl"><img src="https://17439221.s21i.faiusr.com/2/ABUIABACGAAggYzi3AUoiMWqmgQwkAM4rAI!300x300.jpg"></div>
           <div class="fr">
             <div class="bt">云台山风景区至尊门票包</div>
@@ -94,7 +94,7 @@
             <div class="btn"><span class="iconfont icon-gouwuche"></span></div>
           </div>
           <div class="clear"></div>
-        </div>
+        </router-link>
       </div>
     </div>
     <tab></tab>

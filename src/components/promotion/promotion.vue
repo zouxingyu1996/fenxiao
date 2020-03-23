@@ -17,25 +17,25 @@
         </div>
       </div>
       <div class="btn">
-        <a href="javascript:0;">立即提现</a>
+        <router-link tag="span" to="/cash">立即提现</router-link>
       </div>
       <div class="box">
-        <div class="item">
+        <router-link tag="div" class="item" to="/share">
           <span class="iconfont icon-erweima"></span>
           <div>我的二维码</div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/commission">
           <span class="iconfont icon-yongjin"></span>
           <div>佣金明细</div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/cashrecord">
           <span class="iconfont icon-jiludanzilishijilu"></span>
           <div>提现记录</div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/promoter_list">
           <span class="iconfont icon-tongji"></span>
           <div>推广统计</div>
-        </div>
+        </router-link>
       </div>
     </div>
   </transition>
@@ -106,7 +106,9 @@ export default {
             margin-bottom .1rem
     .btn
       text-align center
-      a
+      position relative
+      z-index 99
+      span
         display block
         font-size .28rem
         color #fff

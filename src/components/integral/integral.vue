@@ -4,62 +4,70 @@
         <span class="text">积分兑换</span>
       </div>
       <div class="box">
-        <div class="item">
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
-        <div class="item">
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
           <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
           <div class="tips">
             <div class="bt">云上黑茶</div>
             <div class="price"><span>99</span>积分</div>
             <div class="num">已兑99件</div>
           </div>
-        </div>
+        </router-link>
+        <router-link tag="div" class="item" to="/detail">
+          <div class="img"><img src="http://www.ytstea.com/uploads/allimg/170521/1-1F521144104B2.jpg"></div>
+          <div class="tips">
+            <div class="bt">云上黑茶</div>
+            <div class="price"><span>99</span>积分</div>
+            <div class="num">已兑99件</div>
+          </div>
+        </router-link>
       </div>
       <tab></tab>
     </div>

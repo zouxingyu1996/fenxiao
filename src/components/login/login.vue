@@ -5,7 +5,7 @@
         <img src="./logo.png">
       </div>
     </div>
-    <div class="cen">
+    <div class="cen" v-if="type == 1">
       <div class="top">
         <div class="item on">账号登录</div>
         <div class="item">快速登录</div>
@@ -28,7 +28,30 @@
         </div>
         <div class="logon" @click="logon">登录</div>
         <div class="tip">
-          没有账号?<span class="font-color-red">立即注册</span>
+          没有账号?<span class="font-color-red" @click="register">立即注册</span>
+        </div>
+      </div>
+    </div>
+    <div class="cen" v-if="type == 2">
+      <div class="top">
+        <div class="item on">账号注册</div>
+      </div>
+      <div class="list">
+        <div class="item">
+          <div class="input">
+            <span class="iconfont icon-shoujihao"></span>
+            <input placeholder="输入手机号码"/>
+          </div>
+        </div>
+        <div class="item">
+          <div class="input">
+            <span class="iconfont icon-mima"></span>
+            <input placeholder="填写登录密码"/>
+          </div>
+        </div>
+        <div class="logon" @click="logon">注册</div>
+        <div class="tip">
+          已有账号?<span class="font-color-red" @click="login">立即登录</span>
         </div>
       </div>
     </div>
@@ -40,12 +63,19 @@
 export default {
   data () {
     return {
+      type: 1
     }
   },
   methods: {
     logon () {
       window.localStorage.setItem('login', '狐离')
       this.$router.push({ path: this.redirect || '/' })
+    },
+    login () {
+      this.type = 1
+    },
+    register () {
+      this.type = 2
     }
   }
 }
