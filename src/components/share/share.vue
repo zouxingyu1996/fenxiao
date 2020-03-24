@@ -3,7 +3,7 @@
     <div class="share">
       <div class="header">
         <span class="iconfont icon-jiantouarrowhead7" @click="back"></span>
-        <span class="text">我的二维码</span>
+        <span class="text">会员登录</span>
       </div>
       <div class="cen" ref="imageWrapper">
         <div class="top">
